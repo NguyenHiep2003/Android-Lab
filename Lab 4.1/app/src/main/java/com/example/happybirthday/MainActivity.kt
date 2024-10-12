@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }else if (id == R.id.btn9) {
             addDigit(9)
         }else if (id == R.id.btnAdd) {
+            if(state == 2) return;
             textReuslt.text = "$op1";
             textTemp.text = "$op1 + ";
             op = 1
@@ -79,16 +80,19 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             textReuslt.text= "0";
             if(currentShowResult) textTemp.text="";
         }else if (id == R.id.btnSub) {
+            if(state == 2) return;
             textReuslt.text = "$op1";
             textTemp.text = "$op1 - ";
             op = 2
             state = 2
         }else if (id == R.id.btnMul) {
+            if(state == 2) return;
             textReuslt.text = "$op1";
             textTemp.text = "$op1 x ";
             op = 3
             state = 2
         }else if (id == R.id.btnDiv) {
+            if(state == 2) return;
             textReuslt.text = "$op1";
             textTemp.text = "$op1 / ";
             op = 4
