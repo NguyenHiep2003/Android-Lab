@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Happy Birthday</string>
+    <string-array name="currency">
+        <item>Vietnam - Dong</item>
+        <item>United States - Dollar</item>
+        <item>Thailand - Baht</item>
+        <item>United Kingdom - Pound</item>
+        <item>Japan - Yen</item>
+    </string-array>
+    <string-array name="symbol">
+        <item>₫</item>
+        <item>$</item>
+        <item>฿</item>
+        <item>£</item>
+        <item>¥</item>
+    </string-array>
 </resources>
